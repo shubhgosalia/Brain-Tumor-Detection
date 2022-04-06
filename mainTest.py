@@ -3,7 +3,8 @@ from keras.models import load_model
 from PIL import Image
 import numpy as np
 model=load_model('BrainTumor10EpochsCategorical.h5')
-image=cv2.imread('C:\\Users\\dell\\Brain-Tumor-Detection\\pred\\pred2.jpg')
+# Please enter the parth of your image here this defers from person to person
+image=cv2.imread('C:\\Users\\HP\\Desktop\\College files\\3rd Y B TECH FILES\\SEMESTER 6\\Applied Machine Learning using Tensorflow(AMLTF)\\AMLTF IA-1\\Brain-Tumor-Detection\\pred\\pred0.jpg')
 
 img=Image.fromarray(image)
 img=img.resize((64,64))
